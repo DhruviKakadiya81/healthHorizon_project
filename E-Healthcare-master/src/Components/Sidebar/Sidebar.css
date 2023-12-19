@@ -1,0 +1,133 @@
+.sidebar-container-main {
+  transition: all 500ms ease;
+  padding-top: 0px;
+  height: calc(100vh - 55px);
+  overflow-y: auto;
+}
+
+.sidebar-container-main-full {
+  height: 100%;
+  transition: all 500ms ease;
+  padding-top: 0px;
+}
+
+.hide-sidebar {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar-main-container {
+  display: flex;
+  font-size: 16px;
+}
+
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  background: #0b8fdc;
+  color: white;
+  height: calc(100vh-55px);
+  overflow-y: auto;
+}
+
+.main-toggle {
+  width: 100%;
+}
+
+.sidebar-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}
+
+.sidebar-routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.sidebar-link:hover {
+  border-right: 4px solid white;
+  background: #0a609a;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+  color: white;
+}
+
+.child-menu-container:hover {
+  border-right: 4px solid white;
+  background: #0a609a;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  border-right: 4px solid white;
+  background: #0a609a;
+}
+
+.sidebar-link-text {
+  white-space: nowrap;
+}
+
+.sidebar-menu {
+  display: flex;
+  color: white;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar-menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu-container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+
+.break-line-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

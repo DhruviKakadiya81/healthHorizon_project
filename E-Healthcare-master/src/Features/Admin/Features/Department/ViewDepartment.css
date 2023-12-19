@@ -1,0 +1,93 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+.department-container {
+  animation: fadeIn 1s;
+}
+
+.departmen-info-card-container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.department-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px !important;
+}
+
+.department-container,
+.department-doctor-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.text-blue {
+  color: #0b8fdc;
+}
+
+.departmen-info-card-container .active-status-tag {
+  text-align: center;
+  border: 2px solid rgb(0, 216, 0);
+  color: rgb(0, 216, 0);
+  border-radius: 5px;
+  display: inline;
+  padding: 2px 10px;
+  font-weight: 600;
+}
+
+.departmen-info-card-container .inactive-status-tag {
+  text-align: center;
+  border: 2px solid orange;
+  color: orange;
+  border-radius: 5px;
+  display: inline;
+  padding: 2px 10px;
+  font-weight: 600;
+}
+
+.action-btn-container {
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.departmen-info-card-container:hover .action-btn-container {
+  opacity: 1;
+  transition: opacity 0.8s;
+} 
+
+.btn-delete-dpt:focus,
+.btn-edit-dpt:focus {
+  outline: none;
+}
+.btn-delete-dpt{
+  background-color: rgb(252, 216, 224) !important;
+  color: rgb(249, 37, 104) !important;
+}
+.btn-edit-dpt{
+  background-color: rgb(215, 215, 244) !important;
+  color: rgb(84, 84, 243) !important;
+}
+
+
+@media (max-width: 993px) {
+  .department-container {
+    flex-wrap: wrap;
+  }
+
+  .info-para {
+    margin-top: 0px !important;
+  }
+}

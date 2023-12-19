@@ -1,0 +1,51 @@
+@import url('./Assets/Bootstrap/bootstrap.min.css');
+
+button:focus {
+  outline: none;
+}
+
+/* -------- Scroll bar ------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #39a3e0;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0b8fdc;
+}
+
+/* -------- Hide arrow from number input ------- */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+/* -------- Remove outline from sweet alert box ------- */
+
+.swal2-close:focus {
+  outline: none !important;
+}
